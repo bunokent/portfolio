@@ -69,6 +69,17 @@ navLinks.forEach((link) => {
   });
 });
 
+const liElements = document.querySelectorAll("#home header ul li");
+liElements.forEach((element) => {
+  element.addEventListener("click", function () {
+    liElements.forEach((li) => {
+      li.classList.remove("active");
+    });
+
+    element.classList.add("active");
+  });
+});
+
 const sections = document.querySelectorAll("section");
 
 const isMobile = window.innerWidth < 768;
@@ -79,7 +90,6 @@ observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const id = entry.target.getAttribute("id");
-    console.log(window.innerWidth);
     if (entry.isIntersecting) {
       navLinks.forEach((link) => {
         if (link.getAttribute("data-link") == id) link.classList.add("active");

@@ -109,14 +109,16 @@ body {
   right: 0;
 }
 
-#home header ul li:hover::before,
-#home header ul li:hover::after {
+#home header ul li.active::before,
+#home header ul li.active::after {
   width: 100%;
 }
 
+/* 
 #home header ul li:hover a {
   color: var(--primary-color);
 }
+ */
 
 #home header ul li a.active {
   color: var(--primary-color);
