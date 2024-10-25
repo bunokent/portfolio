@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kent Buno | Portfolio</title>
+  </head>
+  <body>
+    <section id="home">
+      <header>
+        <div>
+          <img id="logo" src="./assets/logo - white.svg" alt="my logo" />
+          <button id="menu"><i class="fa-2x fa-solid fa-bars"></i></button>
+        </div>
+        <ul>
+          <li><a href="#home" class="active" data-link="home">HOME</a></li>
+          <li><a href="#projects" data-link="projects">PROJECTS</a></li>
+          <li><a href="#about" data-link="about">ABOUT</a></li>
+          <li><a href="#contacts" data-link="contacts">CONTACTS</a></li>
+          <div class="social-links-nav">
+            <a href="https://github.com/bunokent"><i class="fa-2x fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kent-buno-632863330/"><i class="fa-2x fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/kent.buno"><i class="fa-2x fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kentbuno/"><i class="fa-2x fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/this_is_creed"><i class="fa-2x fa-brands fa-x-twitter"></i></a>
+          </div>
+        </ul>
+      </header>
+      <main>
+        <div class="social-links-sidebar">
+          <div class="line"></div>
+          <a href="https://github.com/bunokent"><i class="fa-2x fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/kent-buno-632863330/"><i class="fa-2x fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/kent.buno"><i class="fa-2x fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/kentbuno/"><i class="fa-2x fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/this_is_creed"><i class="fa-2x fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="info-container">
+          <h1>KENT BUNO</h1>
+          <h2>College Student</h2>
+        </div>
+        <div class="profile-container">
+          <div>
+            <img src="./assets/logo-colorized.svg" alt="my colorized logo" />
+            <img src="./assets/profile.png" alt="my profile picture" />
+          </div>
+          <div>
+            <div class="square"></div>
+            <p>
+              Currently working on
+              <span style="color: white; font-weight: 600">Portfolio</span>
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section id="projects">
+      <div class="header">
+        <h3>PROJECTS</h3>
+      </div>
+      <p>These are some simple projects that I made during the summer break between June and August of 2024</p>
+      <div>
+        <div class="project-container">
+          <div class="banner-container">
+            <img src="./assets/projects/english-dictionary.png" alt="english dictionary" />
+          </div>
+          <div class="project-info">
+            <p>HTML CSS Javascript API</p>
+            <h4>English Dictionary</h4>
+            <p>Word Definition Generator</p>
+            <a href="" id="live-link">Live Preview</a>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="banner-container">
+            <img src="./assets/projects/weather-forecast.png" alt="weather-forecast" />
+          </div>
+          <div class="project-info">
+            <p>HTML CSS Javascript API</p>
+            <h4>Weather forecast</h4>
+            <p>City's Weather Information</p>
+            <a href="" id="live-link">Live Preview</a>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="banner-container">
+            <img src="./assets/projects/todo-list.png" alt="todo list" />
+          </div>
+          <div class="project-info">
+            <p>HTML CSS Javascript</p>
+            <h4>Todo List</h4>
+            <p>Personal Task Manager</p>
+            <a href="" id="live-link">Live Preview</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="header">
+        <h3>ABOUT</h3>
+      </div>
+      <div>
+        <div class="info-container">
+          <div>
+            <img src="./assets/about-profile.png" alt="my profile picture" />
+            <div>
+              <p>Hello, I am Kent Buno</p>
+              <p>
+                Born in San Agustin, Talibon, Bohol, on May 20, 2005, currently studying Information Technology at Cebu
+                Technological University. I'm currently learning HTML, CSS, Javascript, Python and Java.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-container">
+          <div class="tabs-btn-container">
+            <button data-tab="skills-tab" class="active">Skills</button>
+            <button data-tab="address-tab">Address</button>
+            <button data-tab="favorites-tab">Favorites</button>
+          </div>
+          <div class="tabs-content-container">
+            <div id="skills-tab" class="tab-content active">
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  width="60px"
+                />
+                <div class="progress-bar"></div>
+                <p>40%</p>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  width="60px"
+                />
+                <div class="progress-bar"></div>
+                <p>40%</p>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  width="60px"
+                />
+                <div class="progress-bar"></div>
+                <p>20%</p>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  width="60px"
+                />
+                <div class="progress-bar"></div>
+                <p>40%</p>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                  width="60px"
+                />
+                <div class="progress-bar"></div>
+                <p>50%</p>
+              </div>
+            </div>
+            <div id="address-tab" class="tab-content">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d468.2701150521137!2d124.31603135548411!3d10.098867273249207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDA1JzU1LjkiTiAxMjTCsDE4JzU2LjkiRQ!5e1!3m2!1sen!2sph!4v1729746736813!5m2!1sen!2sph"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div id="favorites-tab" class="tab-content">
+              <div class="fav-btns-container">
+                <button data-fav="anime-tab" class="active">Anime</button>
+                <button data-fav="music-tab">Music</button>
+                <button data-fav="game-tab">Game</button>
+              </div>
+              <div class="fav-contents-container">
+                <div id="anime-tab" class="fav-content active">
+                  <video src="./assets/naruto.mp4" controls></video>
+                  <p>Naruto</p>
+                </div>
+                <div id="music-tab" class="fav-content">
+                  <img src="./assets/album.jpg" alt="your gonna go far music album" />
+                  <p>You're gonna go far</p>
+                  <p>Noah Kahan</p>
+                  <audio src="./assets/your_gonna_go_far.mp3" controls></audio>
+                </div>
+                <div id="game-tab" class="fav-content">
+                  <video src="./assets/coc.mp4" controls></video>
+                  <p>Clash of Clans</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="header">
+        <h3>CONTACTS</h3>
+      </div>
+      <div>
+        <div class="contact-info-container">
+          <i class="fa-2x fa-solid fa-phone"></i>
+          <p>PHONE</p>
+          <div class="line"></div>
+          <p>+63 960 676 5533</p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-2x fa-solid fa-envelope"></i>
+          <p>GMAIL</p>
+          <div class="line"></div>
+          <p>bunokent19@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-2x fa-brands fa-discord"></i>
+          <p>DISCORD</p>
+          <div class="line"></div>
+          <p>bunokent</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <img src="./assets/logo - white.svg" alt="my logo" width="40px" />
+      <p id="copyright">
+        ©Copyright 2024. Made by
+        <span style="color: white; font-weight: 700">Kent Buno</span>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
