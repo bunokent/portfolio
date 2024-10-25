@@ -18,6 +18,22 @@ menuBtn.addEventListener("click", function () {
   degree = degree == 180 ? 0 : 180;
 });
 
+const navLinks = document.querySelectorAll("#home header ul li a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    navLinks.forEach((navLink) => {
+      navLink.classList.remove("active");
+    });
+    link.classList.add("active");
+    menuContent.classList.remove("active");
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+    menuBtn.style.transform = `rotate(${degree}deg)`;
+    degree = degree == 180 ? 0 : 180;
+  });
+});
+
 const tabBtns = document.querySelectorAll(".tabs-btn-container button");
 const tabContents = document.querySelectorAll(".tab-content");
 
@@ -58,28 +74,6 @@ favBtns.forEach((btn) => {
   });
 });
 
-const navLinks = document.querySelectorAll("#home header ul li a");
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    navLinks.forEach((navLink) => {
-      navLink.classList.remove("active");
-    });
-    link.classList.add("active");
-  });
-});
-
-const liElements = document.querySelectorAll("#home header ul li");
-liElements.forEach((element) => {
-  element.addEventListener("click", function () {
-    liElements.forEach((li) => {
-      li.classList.remove("active");
-    });
-
-    element.classList.add("active");
-  });
-});
-
 const sections = document.querySelectorAll("section");
 
 const isMobile = window.innerWidth < 768;
@@ -92,8 +86,9 @@ const observer = new IntersectionObserver((entries) => {
     const id = entry.target.getAttribute("id");
     if (entry.isIntersecting) {
       navLinks.forEach((link) => {
-        if (link.getAttribute("data-link") == id) link.classList.add("active");
-        else link.classList.remove("active");
+        if (link.getAttribute("data-link") == id) {
+          link.classList.add("active");
+        } else link.classList.remove("active");
       });
     }
   });

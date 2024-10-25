@@ -83,42 +83,15 @@ body {
 #home header ul li {
   text-align: center;
   cursor: pointer;
-  padding: 2rem;
   font-size: 1.5rem;
   font-weight: 700;
   position: relative;
 }
 
-#home header ul li::before,
-#home header ul li::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: var(--white);
-  transition: width 350ms ease-in;
+#home header ul li a {
+  padding: 2rem;
+  display: block;
 }
-
-#home header ul li::before {
-  top: 0;
-  left: 0;
-}
-
-#home header ul li::after {
-  bottom: 0;
-  right: 0;
-}
-
-#home header ul li.active::before,
-#home header ul li.active::after {
-  width: 100%;
-}
-
-/* 
-#home header ul li:hover a {
-  color: var(--primary-color);
-}
- */
 
 #home header ul li a.active {
   color: var(--primary-color);
@@ -315,8 +288,11 @@ h3 {
   text-align: center;
 }
 
+.header {
+  margin-bottom: 2rem;
+}
+
 #about > div {
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -582,7 +558,6 @@ h3 {
   gap: 3rem;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
 }
 
 #contacts .contact-info-container {
@@ -653,14 +628,14 @@ footer p {
     justify-content: flex-end;
   }
 
-  #home header ul li:hover::after,
-  #home header ul li:hover::before {
+  #home header ul li.active::after,
+  #home header ul li.active::before {
     width: 0;
   }
 
   #home header ul li a {
     font-size: 1.2rem;
-    padding-bottom: 0.5rem;
+    padding: 2rem 2rem 0.5rem 2rem;
     position: relative;
     transition: all 500ms ease;
   }
@@ -681,8 +656,12 @@ footer p {
     width: 20px;
   }
 
+  #home header ul li a:hover {
+    color: var(--primary-color);
+  }
+
   #home header ul li:hover a::after {
-    width: 100%;
+    width: 60%;
   }
 
   #home header ul li a.active {
