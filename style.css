@@ -774,13 +774,20 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1300px) {
+  #home main .profile-container {
+    margin-left: 13rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   h3 {
     font-size: 4rem;
   }
 
   #home main .profile-container {
     width: 500px;
+    margin-left: 16rem;
   }
 
   #home header #logo {
@@ -798,10 +805,6 @@ footer p {
   #home header {
     padding: 0rem 5rem 0rem 7.8rem;
     height: 80px;
-  }
-
-  #home main .profile-container {
-    margin-left: 16rem;
   }
 
   #home main .social-links-sidebar {
@@ -897,5 +900,17 @@ footer p {
 
   #about .info-container > div img {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #home main .profile-container {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #home main .profile-container {
+    margin-left: 25rem;
   }
 }
